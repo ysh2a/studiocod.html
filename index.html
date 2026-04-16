@@ -3,107 +3,102 @@
 <head>
 <meta charset="UTF-8">
 <title>visualstudio Download</title>
-<style>
 
-    body {
+<style>
+body {
     margin: 0;
     height: 100vh;
-    background: linear-gradient(135deg, #bcc7f7, #4a00f6);
-    background-attachment: fixed;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;   
+    align-items: center; 
+}
+
+.studio {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+
+/* 텍스트 영역 */
+.text h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: rgb(6, 68, 240);
+}
+
+.text h2 {
+    font-size: 20px;
+    margin-top: 20px;
+    color: rgb(6, 68, 240);
+}
+
+.text p {
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: rgb(6, 68, 240);
+}
+
+/* 버튼 */
+.btn {
+    padding: 14px 28px;
+    background: #0078D4;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #2899f5;
+    box-shadow: 0 0 15px rgba(40,153,245,0.7);
+}
+
+/* 코드 박스 */
+.code-box {
+    width: 420px;
+    height: 280px;
+    background: #1e1e1e;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.5);
+    font-family: monospace;
+    position: relative;
+}
+
+.code-box::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    width: 10px;
+    height: 10px;
+    background: #ff5f56;
+    border-radius: 50%;
+    box-shadow: 18px 0 #ffbd2e, 36px 0 #27c93f;
+}
+
+.code {
+    margin-top: 30px;
+    color: #dcdcdc;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.keyword { color: #569cd6; }
+.func { color: #dcdcaa; }
+.string { color: #ce9178; }
+
+@media (max-width: 900px) {
+    .studio {
+        flex-direction: column;
+        text-align: center;
     }
-
-    .text h1 {
-        font-size: 70px;
-        margin-bottom: 20px;
-        line-height: 0.5;
-        color: rgb(6, 68, 240);
-    }
-
-    .text h2 {
-        font-size: 20px;
-        margin-bottom: 30px;
-        line-height: 1.3;
-        color: rgb(6, 68, 240);
-    }
-
-    .text p {
-        font-size: 25px;
-        opacity: 1;
-        margin-bottom: 20px;
-        color: rgb(6, 68, 240);
-    }
-
-    .btn {
-        padding: 14px 28px;
-        background: #0078D4;
-        color: white;
-        text-decoration: none;
-        border-radius: 6px;
-        font-weight: bold;
-        transition: 0.3s;
-    }
-
-    .btn:hover {
-        background: #2899f5;
-        box-shadow: 0 0 15px rgba(40,153,245,0.7);
-    }
-
-    .code-box {
-        width: 420px;
-        height: 280px;
-        background: #1e1e1e;
-        border-radius: 10px;
-        padding: 20px;
-        box-shadow: 0 0 25px rgba(0,0,0,0.5);
-        font-family: monospace;
-        position: relative;
-    }
-
-    .code-box::before {
-        content: "";
-        position: absolute;
-        top: 10px;
-        left: 15px;
-        width: 10px;
-        height: 10px;
-        background: #ff5f56;
-        border-radius: 50%;
-        box-shadow: 18px 0 #ffbd2e, 36px 0 #27c93f;
-    }
-
-    .code {
-        margin-top: 30px;
-        color: #dcdcdc;
-        font-size: 14px;
-        line-height: 1.6;
-    }
-
-    .keyword { color: #569cd6; }
-    .func { color: #dcdcaa; }
-    .string { color: #ce9178; }
-
-    @media (max-width: 900px) {
-        .banner {
-            flex-direction: column;
-            text-align: center;
-            height: auto;
-            padding: 60px 20px;
-        }
-
-        .text {
-            max-width: 100%;
-        }
-
-        .code-box {
-            margin-top: 40px;
-            width: 90%;
-        }
-    }
-
-    
+}
 </style>
-<h5></h5>
 </head>
+
 <body>
 
 <div class="studio">
@@ -111,11 +106,7 @@
         <h1>비주얼 스튜디오</h1>
         <p>자바스크립트</p>
         <a href="https://code.visualstudio.com/" class="btn">무료 다운로드</a>
-        <h2>오픈 소스 AI 코드 편집기다수의 에이전트 개발을 위한 최적의 플랫폼</h2>
-    </div>
-
-    <div>
-
+        <h2>오픈 소스 AI 코드 편집기<br>다수의 에이전트 개발을 위한 최적의 플랫폼</h2>
     </div>
 
     <div class="code-box">
@@ -128,5 +119,6 @@
         </div>
     </div>
 </div>
+
 </body>
 </html>
