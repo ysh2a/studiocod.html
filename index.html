@@ -10,22 +10,20 @@ body {
     height: 100vh;
     background: linear-gradient(135deg, #c6d1ff, #26128a);
     display: flex;
-    justify-content: center;   /* 좌우 위치 */
-    align-items: center;       /* 상하 위치 */
+    justify-content: center;   
+    align-items: center;       
 }
 
-/* 전체 레이아웃 */
 .studio {
     display: flex;
     gap: 80px;
     align-items: center;
 }
 
-/* 텍스트 영역 */
 .text h1 {
     font-size: 60px;
     margin-bottom: 20px;
-    color: rgb(6, 68, 240);
+    color: #134ff5;
 }
 
 .text h2 {
@@ -34,21 +32,28 @@ body {
     color: rgb(6, 68, 240);
 }
 
+.text h3 {
+    font-size: 15px;
+    margin-top: 12px;
+    color: rgb(5, 5, 5);
+}
+
 .text p {
     font-size: 25px;
     margin-bottom: 20px;
+    margin-top: -7%;
     color: rgb(6, 68, 240);
 }
 
-/* 버튼 */
 .btn {
-    padding: 14px 28px;
+    padding: 15px 30px;
     background: #0078D4;
     color: white;
-    text-decoration: none;
+    /*text-decoration: none;*/
     border-radius: 6px;
     font-weight: bold;
     transition: 0.3s;
+    font-size: 20px;
 }
 
 .btn:hover {
@@ -56,7 +61,6 @@ body {
     box-shadow: 0 0 15px rgba(40,153,245,0.7);
 }
 
-/* 코드 박스 */
 .code-box {
     width: 420px;
     height: 280px;
@@ -91,6 +95,11 @@ body {
 .func { color: #dcdcaa; }
 .string { color: #ce9178; }
 
+.logo {
+    top: -120px;
+    left: 1%;
+}
+
 @media (max-width: 900px) {
     .studio {
         flex-direction: column;
@@ -107,16 +116,17 @@ body {
         <h1>비주얼 스튜디오</h1>
         <p>자바스크립트</p>
         <h2>오픈 소스 AI 코드 편집기<br>다수의 에이전트 개발을 위한 최적의 플랫폼</h2>
-        <a href="https://code.visualstudio.com/" class="btn">무료 다운로드</a>
+        <a href="https://code.visualstudio.com/" class="btn">무료 다운로드</a> <br>
+        <h3>windows(1.2GB)</h3>
     </div>
 
     <div class="code-box">
         <div class="code">
-            <span class="keyword">function</span> <span class="func">startApp</span>() { <br>
-            &nbsp;&nbsp;<span class="keyword">const</span> msg = <span class="string">"Hello Developer"</span>; <br>
-            &nbsp;&nbsp;console.log(msg); <br>
-            }
-            <span class="func">startApp</span>();
+            1 <span class="keyword">function</span> <span class="func">startApp</span>() { <br>
+            2&nbsp;&nbsp;<span class="keyword">const</span> msg = <span class="string">"Hello Developer"</span>; <br>
+            3&nbsp;&nbsp;console.log(msg); } <br>
+            4 <span class="func">startApp</span>(visualstudio); <br>
+            5 <span class="func">code</span>(j4852mfio387e);
         </div>
     </div>
 </div>
